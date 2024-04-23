@@ -1,6 +1,6 @@
-- []Form
+- [x]Form
     - Fields
-        - Name, email, password, gender, hobby(Optional), state(select)
-    - Vlidation 
+        - Name, email, password, gender, hobby(Optional), state(select)-done
+    - Vlidation done
 
 - []CSS
