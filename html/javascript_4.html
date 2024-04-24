@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <script>
+
+function registration() 
+        {
+        var name = document.regi_form.name.value;
+        if (name == "") {
+            document.getElementById('n1').innerHTML = "please enter name";
+            return false;
+        }
+        else {
+            document.getElementById('n1').innerHTML = "";
+        }
+
+        var lastname = document.regi_form.lastname.value;
+        if (lastname == "") {
+            document.getElementById('n8').innerHTML = "please enter lastname";
+            return false;
+        }
+        else {
+            document.getElementById('n8').innerHTML = "";
+        }
+
+        var address = document.regi_form.address.value;
+        if (address == "") {
+            document.getElementById('n2').innerHTML = "please enter address";
+            return false;
+        }
+        else {
+            document.getElementById('n2').innerHTML = "";
+        }
+        var city = document.regi_form.city.value;
+            if (city == "") {
+                document.getElementById('n3').innerHTML = "please enter city";
+                return false;
+            }
+            else {
+                document.getElementById('n3').innerHTML = "";
+            }
+
+            var zipcode = document.regi_form.zipcode.value;
+            if (zipcode == "") {
+                document.getElementById('n5').innerHTML = "please enter zipcode";
+                return false;
+            }
+            else {
+                document.getElementById('n5').innerHTML = "";
+            }
+
+            var Telephone = document.regi_form.Telephone.value;
+            if (Telephone == "") {
+                document.getElementById('n6').innerHTML = "please enter telephone";
+                return false;
+            }
+            else {
+                document.getElementById('n6').innerHTML = "";
+            }
+            var Email = document.regi_form.Email.value;
+            if (Email== "") {
+                document.getElementById('n7').innerHTML = "please enter email";
+                return false;
+            }
+            else {
+                document.getElementById('n7').innerHTML = "";
+            }
+
+          
+
+            
+        }
+
+
+        </script>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    </head>
+
+    <body>
+       
+        <form action="#" method="post" name="regi_form">
+                
+
+            <div class="form_group">
+                <div class="d-flex">
+                    <div>
+                        <font color="red" size="7">Request a card <br>..............................</font>
+                    </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div>
+                            Infinity Fare frinds save big. starting with 10% off your first pure hase.
+                        </div>
+                    </div>
+                   <br>  <div class="d-flex">
+                        <div>
+                            <label for="name" class="form-label">Name*</label>
+                            <input class="form-control" type="text" name="name" id="name" id style="width: 200px;">
+                            <span id="n1"></span>
+                        </div>
+                        <div>
+                            <label for="lastname" class="form-label">last name*</label>
+                            <input class="form-control" type="lastname" name="lastname" id="lastname" id style="width: 200px;"> 
+                            <span id="n8"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div>
+                            <label for="address" class="form-label">address</label>
+                            <textarea class="form-control" type="address" name="address" id="floatingTextarea" id style="width: 200px;"></textarea>
+                            <span id="n2"></span>
+                        </div>
+                       
+
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <label for="city" class="form-label">city*</label>
+                            <input class="form-control" type="city" name="city" id="city" id style="width: 200px;">
+                            <span id="n3"></span>
+                        </div>
+                    
+                       
+                            <div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<label for="state" class="form-label">state*</label><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<select name="state" id="state">
+                           
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <span id="n4"></span>
+                            </div>
+                            <div>
+                               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label for="zipcode" class="form-label">zipcode*</label>
+                                <input class="form-control" type="zipcode" name="zipcode" id="zipcode" id style="width: 200px;">
+                                <span id="n5"></span>
+                            </div>
+
+                            </div>
+
+                            
+                                <div class="d-flex">
+                                    <div>
+                                        <label for="Telephone" class="form-label">Telephone</label>
+                                        <input class="form-control" type="Telephone" name="Telephone" id="Telephone" id style="width: 200px;">
+                                        <span id="n6"></span> 
+                                    </div>   
+
+                                    <div>
+                                        <label for=" Email" class="form-label"> Email*</label>
+                                        <input class="form-control" type="text" name="Email" id=" Email">
+                                        <span id="n7"></span>  
+                                    </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <br><br>*Required fields 
+                                        </div>  
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <input type="submit" name="submit" id="submit" onclick=" return registration() ">
+                                        </div>
+
+                                        <div>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<input  type="reset" value="cancle">
+                                        </div>
+                                    </div>
+                                    
+                            
+                            
+        </form>
+    </div>
+    
+       
+    
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+    </body>
+</html>

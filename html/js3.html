@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="index.js">
+            
+        </script>
+    </head>
+    <body>
+        <form name="myForm"  onsubmit="return validateForm()" method="post">
+            <div>
+            Name:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" >
+            
+        </div><br>
+        <div>
+            password: <input type="password" name="password"  >
+        </div><br>
+
+        <div>
+            email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email">
+
+        </div><br>
+
+        <div>
+            gender: &nbsp;&nbsp;&nbsp;<input type="radio" name="g1">male
+            <input type="radio" name="g1">female
+        </div><br>
+
+        <div>
+            hobby:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby">writing
+            <input type="checkbox" name="hobby">reading
+            <input type="checkbox" name="hobby">drawing
+
+        </div><br>
+
+        <div>
+            state:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="state" >
+                      <option >--select one--</option>     
+                <option value="1">gujarat</option>
+                <option value="2">mp</option>
+                <option value="3">up</option>
+              </select>
+        </div><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit"  >
+            </form>
+            
+    </body>
+</html>
